@@ -36,6 +36,7 @@
             nInLabel = new Label();
             decimalOutLabel = new Label();
             convBtn = new Button();
+            ErrorBox = new Label();
             ((System.ComponentModel.ISupportInitialize)n).BeginInit();
             SuspendLayout();
             // 
@@ -112,11 +113,22 @@
             convBtn.UseVisualStyleBackColor = true;
             convBtn.Click += button1_Click;
             // 
+            // ErrorBox
+            // 
+            ErrorBox.AutoSize = true;
+            ErrorBox.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ErrorBox.ForeColor = Color.Red;
+            ErrorBox.Location = new Point(377, 396);
+            ErrorBox.Name = "ErrorBox";
+            ErrorBox.Size = new Size(0, 30);
+            ErrorBox.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(810, 450);
+            Controls.Add(ErrorBox);
             Controls.Add(convBtn);
             Controls.Add(decimalOutLabel);
             Controls.Add(nInLabel);
@@ -126,7 +138,7 @@
             Controls.Add(nLabel);
             Controls.Add(mainLabel);
             Name = "Form1";
-            Text = "Form1";
+            Text = "toDecimal";
             ((System.ComponentModel.ISupportInitialize)n).EndInit();
             ResumeLayout(false);
             PerformLayout();
