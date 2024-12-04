@@ -142,5 +142,6 @@
         private Label nInLabel;
         private Label decimalOutLabel;
         private Button convBtn;
+        public Label ErrorBox;
     }
 }
